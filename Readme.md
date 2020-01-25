@@ -17,7 +17,9 @@ Desarrollo de una aplicación similar a un blog, en el cuál los usuarios pueden
 
 ## Autor
 Jerson Ramírez Ortiz
+
 email: juamkoo@gmail.com
+
 fb: https://www.facebook.com/jersonomar.ramirezortiz
 
 
