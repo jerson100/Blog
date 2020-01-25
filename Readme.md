@@ -1,15 +1,15 @@
-### Proyecto Web 01
+# Proyecto Web 01 - Blog
 
 Desarrollo de una aplicación similar a un blog, en el cuál los usuarios pueden comentar, publicar, seguir, etc...
 
 ## Herramientas a utilizar
 
-# Fronted
+### Fronted
  * Html5
  * Css
  * Javascript
  
-# Backend
+### Backend
 * Java
 * Servlet
 * JSP
