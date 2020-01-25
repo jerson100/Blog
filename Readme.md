@@ -2,20 +2,20 @@
 
 Desarrollo de una aplicación similar a un blog, en el cuál los usuarios pueden comentar, publicar, seguir, etc...
 
-##Herramientas a utilizar
+## Herramientas a utilizar
 
-#Fronted
+# Fronted
  * Html5
  * Css
  * Javascript
  
-#Backend
+# Backend
 * Java
 * Servlet
 * JSP
 * Apache tomcat
 
-##Autor
+## Autor
 Jerson Ramírez Ortiz
 email: juamkoo@gmail.com
 fb: https://www.facebook.com/jersonomar.ramirezortiz
