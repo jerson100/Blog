@@ -19,17 +19,62 @@
         <link href="css/theme/typography.css" rel="stylesheet" type="text/css"/>
         <link href="css/theme/fonts.css" rel="stylesheet" type="text/css"/>
         <link href="css/components/header.css" rel="stylesheet" type="text/css"/>
+        <link href="css/pages/home.css" rel="stylesheet" type="text/css"/>
     </head>
     <body>
-        
+
         <jsp:include page="../includes/header.jsp"></jsp:include>
-        <div class="carrousel-container">
-            <div class="je-container">
-                <div class="je-item">
-                    <div class="carrousel-inner"></div>
+
+        <section class="carrousel-container">
+            <div class="carrousel-title">
+                <div class="je-container">
+                    <div class="je-item">
+                        <h2 class="carrousel_parrafo t3">Mejores publicaciones de la semana</h2>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div class="carousel-inner">
+                <div class="je-container">
+                    <div class="je-item">
+                        <div class="carousel-data-container">
+                            <div class="carousel-data_articles">
+                                <article class="carrousel-item">
+                                    <div class="carousel-item_details">
+                                        <h1 class="title">Aquí programando una vida sin ella</h1>
+                                        <p class="description">I´m programming</p>
+                                        <ul class="tags">
+                                            <li class="tag-item t5">Paisaje</li>
+                                            <li class="tag-item t5">Vida</li>
+                                            <li class="tag-item t5">Animales</li>
+                                        </ul>
+                                        <div class="details-post">
+                                            <div class="post-autor">
+                                                <img class="autor-img" src="imgs/jpg/yop.jpg" alt="Jerson Ramírez Ortiz">
+                                                <span class="autor-name">Jerson100</span>
+                                            </div>
+                                            <div class="post-date">
+                                                <span class="post-date_year">Publicado el 30/06/2019</span>
+                                                <span class="post-date_hours">a las 8:25 pm</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item_img">
+                                        <img src="imgs/jpg/02.jpg" alt=""> 
+                                    </div>
+                                </article>
+                            </div>
+                            <div class="carousel-data_nav">
+                                <div class="carousel-data_nav">
+                                    <span class="nav-item current"></span>
+                                    <span class="nav-item"></span>
+                                    <span class="nav-item"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
         <main class="main-container">
             <div class="je-container">
                 <div class="je-item">
@@ -38,14 +83,17 @@
                     </section>
                 </div>
                 <div class="je-item">
+                    <section>
+                        <h1>Usuarios con muchos likes</h1>
+                    </section>
                 </div>
             </div>
-           
+
         </main>
-        
+
         <!--
             /post/15684/titulo
         -->
-        
+
     </body>
 </html>

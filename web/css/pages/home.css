@@ -1,0 +1,115 @@
+
+:root{
+    --img-autor : 2rem;
+}
+
+.carrousel-container .carrousel-title{
+    padding: 1rem 0;
+    background-color: #2A3B47;
+}
+
+.carrousel-title .carrousel_parrafo{
+    text-align: center;
+    color: var(--body-bg);
+}
+
+.carrousel-container .carousel-inner{
+    background-color: var(--color-bgc);
+}
+
+.carousel-inner .carousel-data-container{
+    position: relative;
+}
+
+/*Carousel - item -post*/
+
+.carousel-data-container .carousel-data_articles{
+    padding: 2.5rem 0;
+}
+
+.carousel-data_articles .carrousel-item{
+    display: flex;
+}
+
+.carousel-item_details .title,
+.carousel-item_details .description,
+.tags{
+    margin-bottom: .8rem;
+}
+
+.carousel-item_details .title{
+    color: var(--second-color-alt);
+}
+
+.carousel-item_details .description{
+    color: var(--light-color);
+}
+
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tags .tag-item{
+    border: solid 1px var(--accent-color-alt);
+    color: var(--accent-color-alt);
+    border-radius: 10px;
+    padding: .2em .5em;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+}
+
+.carousel-item_details .details-post{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.details-post .post-autor{
+  display: flex;
+  align-items: center;
+  line-height: 0;
+  margin-bottom: .8rem;
+}
+
+.post-autor .autor-img{
+    height: var(--img-autor);
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: .5rem;
+}
+
+.post-autor .autor-name{
+    color: var(--light-color);
+}
+
+.carrousel-item .carousel-item_img{
+    line-height: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item_img img{
+    object-fit: cover;
+    height: 300px;
+}
+
+.carousel-data_nav{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.carousel-data_nav .nav-item{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: var(--light-color);
+    margin: 0 .5rem .5rem 0;
+}
+
+.carousel-data_nav .nav-item.current{
+   background-color: var(--second-color-alt); 
+}

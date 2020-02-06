@@ -38,9 +38,8 @@
 
 .nav-inner{
     position: fixed;
-    padding: .5rem 0;
     top: calc(var(--height-icon) + var(--padding-header) * 2 + 1px);
-    transform: translateX(50%);
+    transform: translateX(100%);
     left: 0;
     width: 100%;
     padding: 0 1rem;

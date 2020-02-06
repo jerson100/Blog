@@ -1,0 +1,121 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .container{overflow: hidden;}
+  
+  .slider{
+    position: relative;
+    padding: 1rem 0;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .slider .slider_wrapper{
+      width: 100%;
+      height: 100%;
+      white-space: nowrap;
+      transition: all 1.5s;
+      margin-bottom: 1rem;
+  }
+  
+  .slider_item{
+    cursor: pointer;
+    display: inline-block;
+    height: 100%;
+    padding-right: .8rem;
+    vertical-align: top;
+    transition: opacity 500ms;
+  }
+  
+  .slider_item .slider_item-wrapper{
+    background-color: #fff;
+    text-align: center;
+    transition: opacity 500ms,
+                transform 250ms;
+  }
+  
+  .slider_item-wrapper:hover{
+    box-shadow: 0px 0px 20px 2px rgba(0,0,0,.2);
+    transform: scale(1.1);
+  }
+  
+  .slider_item-wrapper{
+      border: solid 1px rgba(0,0,0,.6);
+  }
+  
+  .slider_item-wrapper p{
+    font-size: 22px;
+    font-family: 'Verdana';
+    padding: .7rem 0;
+    color: rgba(0,0,0,.7);
+  }
+  
+  .slider img{
+    max-width: 100%;
+    display: block;
+    height: 160px;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+ .slider  .btn{
+    --width : 30px;
+    width: var(--width);
+    height: var(--width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px rgba(0,0,0,.3);
+    border-radius: 50%;
+    position: absolute;
+    background-color: rgba(255,255,255,.9);
+    font-weight: bold;
+    font-size: 20px;
+    top: calc(50% - var(--width) / 2 - 23px);
+    cursor: pointer;
+  }
+  
+  .btn.btn-left{left: .5rem;}
+  
+  .btn.btn-right{right: .5rem;}
+  
+  .container-nav{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  .slider ul{
+    list-style: none;
+  }
+  
+  .slider .container-nav > .nav_inner{
+    display: flex;
+    justify-content: center;
+    padding: .5rem;
+    flex-wrap: wrap;
+  }
+  
+  .slider .nav_inner > li{
+    width: 30px;
+    height: 30px;
+    margin: 0 .5rem;
+    border: solid 1px black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .slider .btn:hover,
+  .nav_inner > li:hover{
+    background-color: rgba(0,0,0,.8);
+    color: white;
+  }
+  
