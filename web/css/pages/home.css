@@ -1,6 +1,12 @@
 
 :root{
     --img-autor : 2rem;
+    --height-icon : 1.5rem;
+    --padding-header: .3rem;
+}
+
+.carrousel-container{
+    margin-top: calc(var(--height-icon) + var(--padding-header) * 2);
 }
 
 .carrousel-container .carrousel-title{
@@ -19,16 +25,30 @@
 
 .carousel-inner .carousel-data-container{
     position: relative;
+    overflow: hidden;
 }
 
 /*Carousel - item -post*/
 
 .carousel-data-container .carousel-data_articles{
     padding: 2.5rem 0;
+    white-space: nowrap;
 }
 
 .carousel-data_articles .carrousel-item{
+    display: inline-block;
+    width: 100%;
+    margin-right: -4px;
+}
+
+.article-post{
     display: flex;
+    white-space: initial;
+}
+
+.carrousel-item .carousel-item_details{
+    flex-basis: 50%;
+    margin-right: 1.1rem;
 }
 
 .carousel-item_details .title,
@@ -68,7 +88,6 @@
 .details-post .post-autor{
   display: flex;
   align-items: center;
-  line-height: 0;
   margin-bottom: .8rem;
 }
 
@@ -88,11 +107,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-basis: 50%;
 }
 
 .carousel-item_img img{
     object-fit: cover;
     height: 300px;
+    width: 100%;
 }
 
 .carousel-data_nav{
@@ -108,8 +129,51 @@
     display: inline-block;
     background-color: var(--light-color);
     margin: 0 .5rem .5rem 0;
+    cursor: pointer;
 }
 
 .carousel-data_nav .nav-item.current{
-   background-color: var(--second-color-alt); 
+    background-color: var(--second-color-alt); 
+    animation-name: op;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    opacity: 1;
 }
+
+.carga{
+    height: .25rem;
+}
+
+.carga.active{
+    width: 0;
+    animation: width 9s linear 1s;
+    background-color: red;
+}
+
+@media screen and (min-width: 760px){
+    :root{
+        --height-icon : 2rem;
+    }
+}
+
+@Keyframes op{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+@Keyframes width{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+

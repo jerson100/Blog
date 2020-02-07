@@ -4,6 +4,11 @@
     --padding-header: .3rem;
     border-bottom: solid 1px var(--color-border);
     padding: var(--padding-header) 0;
+    position: fixed;
+    top : 0;
+    width: 100%;
+    background-color: white;
+    z-index: var(--z-fixed);
 }
 
 .container-logo{
