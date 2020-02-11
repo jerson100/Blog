@@ -19,6 +19,7 @@
             <div class="nav-inner">
                 <div class="nav">
                     <nav>
+                        <h1 class="ocultar">Menú de navegación</h1>
                         <ul class="nav-list">
                             <li class="list-item"><a href="/">Inicio</a></li>
                             <li class="list-item"><a href="/categorias">Categorías</a></li>
