@@ -89,3 +89,15 @@ body::-webkit-scrollbar-thumb{
 svg{
     z-index: var(--z-normal);
 }
+
+.center{
+    text-align: center;
+}
+
+.right{
+    text-align: right;
+}
+
+.left{
+    text-align: left;
+}

@@ -1,0 +1,33 @@
+.je-btn,[class*=je-btn]{
+    --color-bg-btn : var(--first-color);
+    --color-bg-btn-alt: var(--first-color-alt);
+    --border-radius: .25rem;
+    border-radius: var(--border-radius);
+    background-color: var(--color-bg-btn);
+    color: var(--body-bg);
+    font-size: 16px;
+    padding: .5em 1em;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    line-height: inherit;
+    text-decoration: none;
+    transition: transform .05s;
+    border: solid 1px var(--color-bg-btn);
+}
+
+.je-btn:hover{
+    --color-bg-btn: var(--color-bg-btn-alt);
+}
+
+.dark-red{
+    --color-bg-btn: var(--third-color);
+    --color-bg-btn-alt: var(--third-color-alt);
+}
+
+.dark-orange{
+    --color-bg-btn: var(--color-accent);
+    --color-bg-btn-alt: var(--color-accent-alt);
+}

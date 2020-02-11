@@ -44,7 +44,8 @@ h6,.t6{font-size: var(--smaller-font-size);}
 .biggets{font-size: var(--font-s-h1);}
 .bigger{font-size: var(--font-s-h2);}
 .big{font-size: var(--font-s-h3);}
-.normal{font-size: var(--normal-font-size);}
+.normal{font-size: var(--normal-font-size);
+color: var(--text-color);}
 .small{font-size: var(--small-font-size);}
 .smaller{font-size: var(--smaller-font-size);}
 
