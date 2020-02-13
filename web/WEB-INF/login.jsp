@@ -46,7 +46,7 @@
                                         <span>username</span>
                                     </div>
                                     <div class="form-item">
-                                        <input type="text" class="login-item" name="password">
+                                        <input type="password" class="login-item" name="password">
                                         <img src="imgs/svg/key.svg" alt="Icono de clave de seguridad">
                                         <span>password</span>
                                     </div>
@@ -69,12 +69,12 @@
                                         <span>username</span>
                                     </div>
                                     <div class="form-item">
-                                        <input type="text" class="login-item" name="email">
-                                        <img src="imgs/svg/user02.svg" alt="Icono de email">
+                                        <input type="email" class="login-item" name="email">
+                                        <img src="imgs/svg/user02.svg" alt="Icono de usuario">
                                         <span>email</span>
                                     </div>
                                     <div class="form-item">
-                                        <input type="text" class="login-item" name="password">
+                                        <input type="password" class="login-item" name="password">
                                         <img src="imgs/svg/key.svg" alt="Icono de clave de seguridad">
                                         <span>password</span>
                                     </div>
@@ -89,7 +89,7 @@
         <%@include file="includes/footer.jsp"%>
         <script>
             ((window,document,undefined)=>{
-                const items = Array.from(document.querySelectorAll("input[type='text']"));
+                const items = Array.from(document.querySelectorAll("input:not([type=submit])"));
                 items.forEach(e=>{
                     e.addEventListener('focus',function(){
                         this.nextElementSibling.nextElementSibling.classList.add("form-item-focus");
